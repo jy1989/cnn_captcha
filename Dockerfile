@@ -1,5 +1,5 @@
-FROM python:2-alpine
+FROM python:3-alpine
 ADD . /app
 WORKDIR /app
 RUN pip install --requirement ./requirements.txt
-CMD ["python","./gen_sample_by_captcha.py"]
+CMD ["python3","./gen_sample_by_captcha.py"]
