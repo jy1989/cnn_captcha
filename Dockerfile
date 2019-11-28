@@ -27,6 +27,7 @@ RUN apt-get update -qq \
 ADD . /app
 WORKDIR /app
 RUN pip3 install --requirement ./requirements.txt
+RUN export PYTHONIOENCODING=utf-8
 #RUN pip3 --no-cache-dir install -r ./requirements.txt
 
 
